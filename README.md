@@ -9,9 +9,10 @@ FOGS/data/PEMS04/PEMS04.csv
 
 ## Graph Construction
 ### 1. temporal correlation graph
+```
 cd FOGS/node2vec-master/scripts
-
 run graph_preparation.py
+```
 
 PEMS03
 ```
