@@ -33,7 +33,7 @@ PEMS08
 ```
 python graph_preparation.py --num_of_vertices 170 --distances_filename ../../data/PEMS08/PEMS08.csv --data_filename ../../data/PEMS08/PEMS08.npz --edgelist_filename ../graph/PEMS08.edgelist --filename_T ../graph/PEMS08_graph_T.npz --flow_mean ../../data/PEMS08/PEMS08_flow_count.pkl
 ```
-### 2. spatio-temporal graph
+### 2. embedding by random walk 
 ```
 cd FOGS/node2vec-master/src
 run main_tra.py
@@ -58,7 +58,7 @@ PEMS08
 ```
 python main_tra.py --input ../graph/PEMS08.edgelist --input_T ../graph/PEMS08_graph_T.npz --output ../emb/PEMS08.emb 
 ```
-
+### 3. spatio-temporal graph
 ```
 cd FOGS/node2vec-master/scripts
 run learn_graph.py
