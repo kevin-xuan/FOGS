@@ -4,6 +4,7 @@
 download STSGCN_data (https://github.com/Davidham3/STSGCN) and uncompress the file into data directory. The data directory is as follows:
 
 FOGS/data/PEMS03/PEMS03.csv
+
 FOGS/data/PEMS04/PEMS04.csv
 
 ## Graph Construction
@@ -14,7 +15,7 @@ run graph_preparation.py
 
 PEMS03
 ```
-python graph_preparation.py --sensor_ids_filename ../data/PEMS03/PEMS03.txt --num_of_vertices 358 --distances_filename ../../data/PEMS03/PEMS03.csv --data_filename ../../data/PEMS03/PEMS03.npz --edgelist_filename ../graph/PEMS03.edgelist --filename_T ../graph/PEMS03_graph_T.npz --flow_mean ../../data/PEMS03/PEMS03_flow_count.pkl
+python graph_preparation.py --sensor_ids_filename ../../data/PEMS03/PEMS03.txt --num_of_vertices 358 --distances_filename ../../data/PEMS03/PEMS03.csv --data_filename ../../data/PEMS03/PEMS03.npz --edgelist_filename ../graph/PEMS03.edgelist --filename_T ../graph/PEMS03_graph_T.npz --flow_mean ../../data/PEMS03/PEMS03_flow_count.pkl
 ```
 
 PEMS04
