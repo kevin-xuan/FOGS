@@ -3,6 +3,10 @@
 ## Data Preparation
 STSGCN_data (https://github.com/Davidham3/STSGCN)
 ## Graph Construction
-1. temporal correlation graph
+### 1. temporal correlation graph
+cd FOGS/node2vec-master/scripts
+```
+cd FOGS/node2vec-master/scripts
 
-3. spatio-temporal graph
+```
+### 2. spatio-temporal graph
