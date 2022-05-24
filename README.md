@@ -7,7 +7,7 @@ FOGS/data/PEMS03/PEMS03.csv
 
 FOGS/data/PEMS04/PEMS04.csv
 
-## Graph Construction
+## Usage
 ### 1. temporal correlation graph
 ```
 cd FOGS/node2vec-master/scripts
