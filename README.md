@@ -80,3 +80,6 @@ PEMS08
 ```
 python learn_graph.py --filename_emb ../emb/PEMS08.emb --output_pkl_filename ../../data/PEMS08 --thresh_cos 10 
 ```
+### 4. data preprocessing
+
+### 5. train model
