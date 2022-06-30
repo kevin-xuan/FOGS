@@ -103,3 +103,5 @@ cd FOGS/STFGNN/
 change DATASET = 'PEMS0X' in line 16 in train.py
 run train.py
 ```
+<!-- ### Citing FOGS
+If you use our method as baseline, please kindly cite our IJCAI 2022 paper the using following BibTeX entry. -->
