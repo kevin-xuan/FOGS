@@ -88,12 +88,18 @@ python learn_graph.py --filename_emb ../emb/PEMS08.emb --output_pkl_filename ../
 -->
 ### 4. data preprocessing
 ```
-cd FOGS/node2vec-master/scripts
-run learn_graph.py
+cd FOGS/STFGNN/
+run generate_datasets.py
+```
+
+PEMS03 
+```
+python generate_datasets.py --output_dir ../data/processed/PEMS03/ --flow_mean ../data/PEMS03/PEMS03_flow_count.pkl --traffic_df_filename ../data/PEMS03/PEMS03.npz
 ```
 
 ### 5. train model
 ```
-cd FOGS/node2vec-master/scripts
-run learn_graph.py
+cd FOGS/STFGNN/
+change DATASET = 'PEMS0X' in line 16 in train.py
+run train.py
 ```
