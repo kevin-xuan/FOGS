@@ -28,10 +28,8 @@ PEMS07
 ```
 python graph_preparation.py --num_of_vertices 883 --distances_filename ../../data/PEMS07/PEMS07.csv --data_filename ../../data/PEMS07/PEMS07.npz --edgelist_filename ../graph/PEMS07.edgelist --filename_T ../graph/PEMS07_graph_T.npz --flow_mean ../../data/PEMS07/PEMS07_flow_count.pkl
 ```
-
 PEMS08
-```
--->
+```-->
 python graph_preparation.py --num_of_vertices 170 --distances_filename ../../data/PEMS08/PEMS08.csv --data_filename ../../data/PEMS08/PEMS08.npz --edgelist_filename ../graph/PEMS08.edgelist --filename_T ../graph/PEMS08_graph_T.npz --flow_mean ../../data/PEMS08/PEMS08_flow_count.pkl
 ```
 ### 2. embedding by random walk 
