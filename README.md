@@ -87,5 +87,13 @@ python learn_graph.py --filename_emb ../emb/PEMS08.emb --output_pkl_filename ../
 ```
 -->
 ### 4. data preprocessing
+```
+cd FOGS/node2vec-master/scripts
+run learn_graph.py
+```
 
 ### 5. train model
+```
+cd FOGS/node2vec-master/scripts
+run learn_graph.py
+```
