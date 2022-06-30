@@ -50,7 +50,7 @@ PEMS04
 ```
 python main_tra.py --input ../graph/PEMS04.edgelist --input_T ../graph/PEMS04_graph_T.npz --output ../emb/PEMS04.emb 
 ```
-
+<!-- 
 PEMS07 
 ```
 python main_tra.py --input ../graph/PEMS07.edgelist --input_T ../graph/PEMS07_graph_T.npz --output ../emb/PEMS07.emb 
@@ -60,15 +60,18 @@ PEMS08
 ```
 python main_tra.py --input ../graph/PEMS08.edgelist --input_T ../graph/PEMS08_graph_T.npz --output ../emb/PEMS08.emb 
 ```
+-->
 ### 3. spatio-temporal graph
 ```
 cd FOGS/node2vec-master/scripts
 run learn_graph.py
 ```
+
 PEMS03 
 ```
 python learn_graph.py --filename_emb ../emb/PEMS03.emb --output_pkl_filename ../../data/PEMS03 --thresh_cos 10 
 ```
+<!-- 
 PEMS04 
 ```
 python learn_graph.py --filename_emb ../emb/PEMS04.emb --output_pkl_filename ../../data/PEMS04 --thresh_cos 10 
@@ -82,6 +85,7 @@ PEMS08
 ```
 python learn_graph.py --filename_emb ../emb/PEMS08.emb --output_pkl_filename ../../data/PEMS08 --thresh_cos 10 
 ```
+-->
 ### 4. data preprocessing
 
 ### 5. train model
