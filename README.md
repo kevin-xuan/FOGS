@@ -6,7 +6,9 @@ download STSGCN_data (https://github.com/Davidham3/STSGCN) and uncompress the fi
 FOGS/data/PEMS03/PEMS03.csv
 
 FOGS/data/PEMS04/PEMS04.csv
+<!-- 再将poi_graph.zip放到根目录的KGE文件夹下解压后得到36个graph.pkl文件，目录如下：
 
+Graph_Flashback/KGE/gowalla_scheme1_transh_loc_temporal_20.pkl -->
 ## Usage
 ### 1. temporal correlation graph
 ```
