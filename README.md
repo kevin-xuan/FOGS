@@ -1,5 +1,5 @@
 # IJCAI 2022. FOGS: First-Order Gradient Supervision with Learning-based Graph for Traffic Flow Forecasting
-
+![image](framework.PNG)
 ## Data Preparation
 download STSGCN_data (https://github.com/Davidham3/STSGCN) and uncompress the file into data directory. The data directory is as follows:
 
