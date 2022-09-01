@@ -104,7 +104,7 @@ change DATASET = 'PEMS0X' in line 16 in train.py
 run train.py
 ```
 # Citing
-If you use Graph-Flashback in your research, please cite the following [paper](https://dl.acm.org/doi/10.1145/3534678.3539383):
+If you use FOGS in your research, please cite the following [paper](https://www.ijcai.org/proceedings/2022/0545.pdf):
 ```
 @inproceedings{DBLP:conf/ijcai/RaoWZLS022,
   author    = {Xuan Rao and
