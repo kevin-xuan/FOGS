@@ -103,5 +103,21 @@ cd FOGS/STFGNN/
 change DATASET = 'PEMS0X' in line 16 in train.py
 run train.py
 ```
-<!-- ### Citing FOGS
-If you use our method as baseline, please kindly cite our IJCAI 2022 paper the using following BibTeX entry. -->
+# Citing
+If you use Graph-Flashback in your research, please cite the following [paper](https://dl.acm.org/doi/10.1145/3534678.3539383):
+```
+@inproceedings{DBLP:conf/ijcai/RaoWZLS022,
+  author    = {Xuan Rao and
+               Hao Wang and
+               Liang Zhang and
+               Jing Li and
+               Shuo Shang and
+               Peng Han},
+  title     = {{FOGS:} First-Order Gradient Supervision with Learning-based Graph
+               for Traffic Flow Forecasting},
+  booktitle = {Proceedings of the Thirty-First International Joint Conference on
+               Artificial Intelligence, {IJCAI} 2022, Vienna, Austria, 23-29 July
+               2022},
+  year      = {2022}
+}
+```
