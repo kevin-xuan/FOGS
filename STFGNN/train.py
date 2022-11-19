@@ -237,9 +237,10 @@ def main():
                        args.save + "exp_" + str(args.expid) + "_" + str(round(val_loss_min, 2)) + "_best_model.pth")
 
             # 测试
+            realy = torch.Tensor(dataloader['y_test'][:, :, :, 0]).to(device)  # 这里是因为你在做batch的时候，可能会padding出新的sample以满足batch_size的要求
             test_loss, result = engine.evaluate(dataset='test')
-            prediction = result['prediction']  # shape为(len, horizon, num_sensor * output_dim)
-            test_label = result['truth']
+            prediction = result['prediction'][:realy.size(0)]  # shape为(len, horizon, num_sensor * output_dim)
+            test_label = result['truth'][:realy.size(0)]
             prediction = torch.from_numpy(prediction)  # 转换为tensor
             test_label = torch.from_numpy(test_label)
             log_string(log, "Training finished")
