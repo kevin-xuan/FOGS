@@ -15,7 +15,9 @@ import ast
 
 DATASET = 'PEMS08'  # PEMS03, PEMS04, PEMS07, or PEMS08
 
-config_file = './config/{}.conf'.format(DATASET)
+# config_file = './config/{}.conf'.format(DATASET)  # exists path error for debugging
+dirname, filename = os.path.split(os.path.abspath(__file__))
+config_file = os.path.join(dirname, 'config/{}.conf').format(DATASET)
 config = configparser.ConfigParser()
 config.read(config_file)
 
