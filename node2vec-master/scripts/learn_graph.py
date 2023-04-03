@@ -68,7 +68,7 @@ if __name__ == '__main__':
                         help='CSV file containing sensor distances with three columns: [from, to, distance].')
     parser.add_argument('--output_pkl_filename', type=str, default='../../data/PEMS08',
                         help='Path of the output file.')
-    parser.add_argument('--thresh_cos', type=float, default=10,
+    parser.add_argument('--thresh_cos', type=int, default=10,
                         help='Threshold used in constructing final graph.')
     parser.add_argument('--direct_L', type=bool, default=True,
                         help='Whether is the final graph directed or undirected.')
