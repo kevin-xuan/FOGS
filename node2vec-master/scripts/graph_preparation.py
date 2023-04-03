@@ -120,7 +120,7 @@ if __name__ == '__main__':
                         help='CSV file containing sensor distances with three columns: [from, to, distance].')
     parser.add_argument('--flow_mean', type=str, default='../../data/PEMS08/PEMS08_flow_count.pkl',
                         help='store average flow.')
-    parser.add_argument('--thresh_T', type=float, default=10,
+    parser.add_argument('--thresh_T', type=int, default=10,
                         help='Threshold used in constructing temporal graph.')
     parser.add_argument('--direct_T', type=bool, default=False,
                         help='Whether is the temporal graph directed or undirected.')
