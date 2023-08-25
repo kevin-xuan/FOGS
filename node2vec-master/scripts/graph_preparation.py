@@ -50,7 +50,14 @@ def get_time_volume_matrix(data_filename, period=12 * 24 * 7):  # 用W_v表示
                 for j in range(i * 288 + t, num_ave, period):
                     time_volume.append(data[j][node])
 
-                time_volume_mx[node][i][t] = np.array(time_volume).mean()
+                #* modify this line, filter zero values
+                time_volume = np.array(time_volume)
+                time_volume = time_volume[time_volume != 0.]
+                if len(time_volume) != 0:
+                    time_volume_mx[node][i][t] = time_volume.mean()
+                else:  # all zeros
+                    time_volume_mx[node][i][t] = 0.  
+                # time_volume_mx[node][i][t] = np.array(time_volume).mean()
 
     time_volume_mx = time_volume_mx.reshape(num_nodes, -1)  # (num_nodes, 7*288)
 
